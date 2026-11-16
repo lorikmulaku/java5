@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS ushtrimi5 CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE ushtrimi5;
+
+CREATE TABLE IF NOT EXISTS rezultatet (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ushtrimi VARCHAR(100) NOT NULL UNIQUE,
+    rezultati VARCHAR(255) NOT NULL
+);
